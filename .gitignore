@@ -15,3 +15,5 @@
 *.mp4
 *.srt
 
+# Mac files
+.DS_Store
