@@ -9,3 +9,9 @@
 
 # RStudio files
 .Rproj.user/
+
+
+# Course videos 
+*.mp4
+*.srt
+
