@@ -60,3 +60,22 @@ summary(plants)
 table(plants$Active_Growth_Period)
 # show structure, factors preview of a data set
 str(plants)
+
+
+# more examples
+
+x <- list(a = 1:5, b = rnorm(10))
+lapply(x,mean)
+sapply(x,mean)
+
+# generate 5 random numbers
+runif(5)
+
+# generate a factorial of randum numbers between 0 and 10
+x <- 1:4
+lapply(x, runif, min= 0, max= 10)
+
+# split data into months  (using month value) and get the mean of the groups
+s <- split(airquality, airquality$Month)
+lapply(s, function(x) colMeans(x[, c('Ozone', "Solar.R", "Wind")]))
+sapply(s, function(x) colMeans(x[, c('Ozone', "Solar.R", "Wind")], na.rm = TRUE))
